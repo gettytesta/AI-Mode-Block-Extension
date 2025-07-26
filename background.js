@@ -18,6 +18,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
           url.searchParams.set('udm', '14');
           chrome.tabs.update(tabId, { url: url.toString() });
         }
+      } else if (mode === 'remove') {
+        chrome.scripting.executeScript({
+          target: { tabId: tabId },
+          files: ['removeDiv.js']
+        });
       }
     });
   }

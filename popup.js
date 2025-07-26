@@ -1,7 +1,7 @@
 // Load and reflect current mode
 chrome.storage.sync.get('mode', (data) => {
   var selected = data.mode;
-  if (!selected) selected = 'web'
+  if (!selected) selected = 'remove'
   document.querySelector(`input[value="${selected}"]`).checked = true;
 });
 
