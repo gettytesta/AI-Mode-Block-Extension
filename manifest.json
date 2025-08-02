@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AI Mode Blocker",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Hides AI Mode responses in Google Search results.",
   "icons": {
     "16": "icon16.png",

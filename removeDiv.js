@@ -5,6 +5,8 @@
   function removeTargetDivs() {
     const elements = document.querySelectorAll('.Kevs9.SLPe5b');
     elements.forEach(el => el.remove());
+    var elem = document.getElementById('eKIzJc');
+    if (elem) elem.remove();
   }
 
   removeTargetDivs();
